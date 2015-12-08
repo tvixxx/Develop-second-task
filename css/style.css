@@ -224,7 +224,302 @@
   -o-border-radius: 15px;
   border-radius: 15px;
 }
-
+.main-content-law .modal-block {
+  display: block;
+  position: fixed;
+  width: 550px;
+  height: 420px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  z-index: 5;
+  background-color: #4586c1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 10px 21px -4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 6px 10px 21px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 10px 21px -4px rgba(0, 0, 0, 0.5);
+}
+.main-content-law .modal-block .close-modal-block {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  background: url(../images/icon-cross-x.png) no-repeat;
+  cursor: pointer;
+}
+.main-content-law .modal-block .header-modal {
+  width: 440px;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.main-content-law .login-form {
+  width: 510px;
+  height: 290px;
+  border: 5px solid white;
+  margin-left: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.main-content-law .login-form label {
+  display: block;
+  width: 55%;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  color: white;
+}
+.main-content-law .login-form label:first-child {
+  margin-top: 10px;
+}
+.main-content-law .login-form input {
+  display: block;
+  width: 55%;
+  font-size: 12px;
+  min-height: 30px;
+  padding: 10px 5px 10px 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  background-color: #346898;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.main-content-law .login-form input:hover {
+  opacity: 0.8;
+  border: 2px dotted #346898;
+}
+.main-content-law .login-form input:focus {
+  opacity: 0.6;
+  border: 2px solid #346898;
+}
+.main-content-law .login-form .btn-send {
+  display: block;
+  width: 20%;
+  font-size: 12px;
+  min-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px 10px 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #FF0000;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.main-content-law .login-form .btn-send:hover {
+  border: none;
+  opacity: 0.9;
+  background-color: #FF2020;
+  transform: scale(1.15, 1.15);
+}
+.main-content-law .modal-block-success {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0;
+  width: 306px;
+  height: 120px;
+  border: 3px solid #FF0000;
+  background-color: #346898;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.main-content-law .modal-block-success p {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: white;
+}
+.main-content-law .modal-block-success a {
+  display: block;
+  width: 35%;
+  min-height: 35px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  text-decoration: none;
+  background-color: #FF0000;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.main-content-law .modal-block-success a:hover {
+  opacity: 0.9;
+  background-color: #FF2020;
+  text-decoration: none;
+  transform: scale(1.15, 1.15);
+}
+.main-content-law .modal-block-success a:visited {
+  text-decoration: none;
+}
+.main-content-law .modal-block-success a:active {
+  text-decoration: none;
+}
+.main-content-law .modal-block-error-email {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  width: 350px;
+  height: 120px;
+  border: 3px solid #FF0000;
+  background-color: #346898;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.main-content-law .modal-block-error-email p {
+  display: block;
+  width: 300px;
+  padding: 10px 10px 0 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
+.main-content-law .modal-block-error-email a {
+  display: block;
+  width: 35%;
+  min-height: 35px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  text-decoration: none;
+  background-color: #FF0000;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.main-content-law .modal-block-error-email a:hover {
+  opacity: 0.9;
+  background-color: #FF2020;
+  text-decoration: none;
+  transform: scale(1.15, 1.15);
+}
+.main-content-law .modal-block-error-email a:visited {
+  text-decoration: none;
+}
+.main-content-law .modal-block-error-email a:active {
+  text-decoration: none;
+}
+.main-content-law .hide {
+  display: none;
+}
+.main-content-law .show {
+  display: block;
+  -webkit-animation: bounce .6s;
+  animation: bounce .6s;
+}
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 /*
 *
 Media Phone
