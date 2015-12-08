@@ -1,0 +1,266 @@
+@import "normalize";
+
+// Color
+$main_nav_color: #909699;
+$main_nav_color_active: #0F5FAD;
+
+$header_types_color: #DD621D;
+$header_types_bg: #C4E2F3;
+
+$sub_work_types_color: #4586C1;
+
+$button_order_color: #FF0000;
+
+
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+// Mixin Border-radius
+@mixin border-radius($box_border_radius) {
+  -webkit-border-radius: $box_border_radius;
+  -moz-border-radius: $box_border_radius;
+  -ms-border-radius: $box_border_radius;
+  -o-border-radius: $box_border_radius;
+  border-radius: $box_border_radius;
+}
+
+.navigation-container {
+	margin-bottom: 85px;
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			padding-left: 10px;
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+
+			.links {
+				color: $main_nav_color;
+				text-decoration: underline;
+				&:hover {
+					color: $main_nav_color_active;
+				}
+			}
+			.active-link {
+				color: $main_nav_color_active;
+				text-decoration: underline;
+			}
+		}
+	}
+} // End navigation-container 
+.main-content-law {
+	font-size: 0;
+	.main-title-article {
+
+		h1 {
+			font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+			font-size: 48px;
+		}
+		h4 {
+			font-family: "Elektra Light Pro", Arial, sans-serif;
+			font-size: 21px;
+			margin-bottom: 25px;
+		}
+	} // End Main-title-article
+	.main-type-description {
+		p {
+			font-family: "Elektra Text Pro", Arial, sans-serif;
+			font-size: 15px;
+			margin-bottom: 15px;
+		}
+		.main-types-list {
+			margin-bottom: 90px; 
+			.list {
+				font-family: "Elektra Text Pro", Arial, sans-serif;
+				font-size: 15px;
+				margin-bottom: 20px;
+				p {
+					margin: 0;
+				}
+
+				.header-types {
+					font-family: "Elektra Text Pro", Arial, sans-serif;
+					font-size: 15px;
+					color: $header_types_color;
+				} // End Header-types
+				.types-laws-category {
+					display: block;
+					width: 813px;
+					float: left;
+					margin-top: 20px;
+					margin-bottom: 20px;
+					margin-left: 35px;
+					font-family: "Elektra Text Pro", Arial, sans-serif;
+					font-size: 15px;
+					background-color: $header_types_bg;
+					ul {
+						.category-block {
+							display: inline-block;
+							width: 335px;
+							padding: 15px 38px 15px 38px;
+							vertical-align: top;
+							color: $header_types_color;
+
+							&:first-child {
+								margin-right: 75px;
+							}
+							&:last-child {
+								padding-right: 0;
+							}
+						}
+						li {
+							color: $header_types_color;
+							p {
+								margin: 0;
+								color: black;
+							} // End p
+						} // End li
+					} // End ul
+				} // End Types-laws-category
+			} // End List
+
+		} // End List
+	} // End Main-type-discription
+.sub-title-article {
+	margin-bottom: 25px;
+	h2 {
+		display: block;
+		width: 700px;
+		font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+		font-size: 32px;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	h4 {
+		font-family: "Elektra Light Pro", Arial, sans-serif;
+		font-size: 21px;
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+} // End Sub-title-article
+.sub-content-description {
+	font-size: 0;
+
+	.sub-work-description {
+		font-family: "Elektra Text Pro", Arial, sans-serif;
+		font-size: 15px;
+	} // Sub-work-description
+	.sub-work-types {
+		display: block;
+		width: 850px;
+		font-family: "Elektra Text Pro", Arial, sans-serif;
+		font-size: 15px;
+		color: white;
+		background-color: $sub_work_types_color;
+		img {
+			width: 119px;
+			height: 120px;
+			margin-bottom: 30px;
+		}
+		.work-types-block {
+			display: inline-block;
+			width: 25%;
+			float: left;
+			vertical-align: top;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			margin-left: 35px;
+			margin-right: 35px;
+			&:last-child {
+				margin-right: 0;
+			}
+			img {
+				margin-left: 35px;
+			}
+			h2 {
+				font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+				font-size: 18px;
+			}
+			p {
+				margin: 0;
+			}
+		}
+
+	} // Sub-work-description
+} // End Sub-content-description
+
+
+
+.footer-section-description {
+  margin: 0;
+  padding: 0;
+
+  .law-description-footer {
+    position: relative;
+    font-family: "Elektra Text Pro", Arial, sans-serif;
+    font-size: 15px;
+    padding-left: 120px;
+    margin-bottom: 0;
+    
+
+    &:first-child {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid black; 
+    }
+    &:first-child:after {
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 15px;
+      width: 64px;
+      height: 60px;
+      background: url(../images/tz-7/BlueSymb.png) no-repeat;
+    }
+    &:nth-child(2n) {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid black;
+    }
+    &:nth-child(2n):after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 15px;
+      width: 67px;
+      height: 60px;
+      background: url(../images/tz-7/RedSymb.png) no-repeat;
+    }
+  } // Law-description-footer
+  .helper-description {
+  	font-size: 15px;
+  	font-family: "Elektra Text Pro", Arial, sans-serif;
+  	margin-bottom: 25px;
+  } // End helper-description
+  .btn-order {
+	display: block;
+    width: 42%;
+    min-height: 20px;
+    padding: 12px 40px 12px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Elektra Text Pro", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: $button_order_color;
+    @include border-radius(15px);
+  } // End btn-order
+} // End Footer-section-description
+} // End Main-Content-Law
+
+
+

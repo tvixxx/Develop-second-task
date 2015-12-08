@@ -1,0 +1,226 @@
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navigation-container {
+  margin-bottom: 85px;
+}
+.navigation-container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.navigation-container ul li {
+  display: inline-block;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+.navigation-container ul li:last-child {
+  margin-right: 0;
+}
+.navigation-container ul li .links {
+  color: #909699;
+  text-decoration: underline;
+}
+.navigation-container ul li .links:hover {
+  color: #0F5FAD;
+}
+.navigation-container ul li .active-link {
+  color: #0F5FAD;
+  text-decoration: underline;
+}
+
+.main-content-law {
+  font-size: 0;
+}
+.main-content-law .main-title-article h1 {
+  font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+  font-size: 48px;
+}
+.main-content-law .main-title-article h4 {
+  font-family: "Elektra Light Pro", Arial, sans-serif;
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+.main-content-law .main-type-description p {
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.main-content-law .main-type-description .main-types-list {
+  margin-bottom: 90px;
+}
+.main-content-law .main-type-description .main-types-list .list {
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.main-content-law .main-type-description .main-types-list .list p {
+  margin: 0;
+}
+.main-content-law .main-type-description .main-types-list .list .header-types {
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 15px;
+  color: #DD621D;
+}
+.main-content-law .main-type-description .main-types-list .list .types-laws-category {
+  display: block;
+  width: 813px;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 15px;
+  background-color: #C4E2F3;
+}
+.main-content-law .main-type-description .main-types-list .list .types-laws-category ul .category-block {
+  display: inline-block;
+  width: 335px;
+  padding: 15px 38px 15px 38px;
+  vertical-align: top;
+  color: #DD621D;
+}
+.main-content-law .main-type-description .main-types-list .list .types-laws-category ul .category-block:first-child {
+  margin-right: 75px;
+}
+.main-content-law .main-type-description .main-types-list .list .types-laws-category ul .category-block:last-child {
+  padding-right: 0;
+}
+.main-content-law .main-type-description .main-types-list .list .types-laws-category ul li {
+  color: #DD621D;
+}
+.main-content-law .main-type-description .main-types-list .list .types-laws-category ul li p {
+  margin: 0;
+  color: black;
+}
+.main-content-law .sub-title-article {
+  margin-bottom: 25px;
+}
+.main-content-law .sub-title-article h2 {
+  display: block;
+  width: 700px;
+  font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.main-content-law .sub-title-article h4 {
+  font-family: "Elektra Light Pro", Arial, sans-serif;
+  font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.main-content-law .sub-content-description {
+  font-size: 0;
+}
+.main-content-law .sub-content-description .sub-work-description {
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 15px;
+}
+.main-content-law .sub-content-description .sub-work-types {
+  display: block;
+  width: 850px;
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #4586C1;
+}
+.main-content-law .sub-content-description .sub-work-types img {
+  width: 119px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.main-content-law .sub-content-description .sub-work-types .work-types-block {
+  display: inline-block;
+  width: 25%;
+  float: left;
+  vertical-align: top;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.main-content-law .sub-content-description .sub-work-types .work-types-block:last-child {
+  margin-right: 0;
+}
+.main-content-law .sub-content-description .sub-work-types .work-types-block img {
+  margin-left: 35px;
+}
+.main-content-law .sub-content-description .sub-work-types .work-types-block h2 {
+  font-family: "Elektra Medium Pro Regular", Arial, sans-serif;
+  font-size: 18px;
+}
+.main-content-law .sub-content-description .sub-work-types .work-types-block p {
+  margin: 0;
+}
+.main-content-law .footer-section-description {
+  margin: 0;
+  padding: 0;
+}
+.main-content-law .footer-section-description .law-description-footer {
+  position: relative;
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 15px;
+  padding-left: 120px;
+  margin-bottom: 0;
+}
+.main-content-law .footer-section-description .law-description-footer:first-child {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+.main-content-law .footer-section-description .law-description-footer:first-child:after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  width: 64px;
+  height: 60px;
+  background: url(../images/tz-7/BlueSymb.png) no-repeat;
+}
+.main-content-law .footer-section-description .law-description-footer:nth-child(2n) {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+.main-content-law .footer-section-description .law-description-footer:nth-child(2n):after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  width: 67px;
+  height: 60px;
+  background: url(../images/tz-7/RedSymb.png) no-repeat;
+}
+.main-content-law .footer-section-description .helper-description {
+  font-size: 15px;
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  margin-bottom: 25px;
+}
+.main-content-law .footer-section-description .btn-order {
+  display: block;
+  width: 42%;
+  min-height: 20px;
+  padding: 12px 40px 12px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Elektra Text Pro", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background-color: #FF0000;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
