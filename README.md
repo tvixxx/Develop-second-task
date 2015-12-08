@@ -1,2 +1,3 @@
 # Develop-second-task
-`Edit in work area`
+### Stack: HTML, CSS, SASS, Bootstrap, jQuery, Responsive (RWD)
+`Edited in the work area`
