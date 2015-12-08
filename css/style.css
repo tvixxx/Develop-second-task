@@ -209,7 +209,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: "Elektra Text Pro", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 24px;
   text-align: center;
   border: none;
@@ -223,4 +223,111 @@
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
   border-radius: 15px;
+}
+
+/*
+*
+Media Phone
+*
+*/
+@media only screen and (max-width: 480px) {
+  .main-content-law .main-title-article h1 {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  .main-content-law .main-title-article .main-title-type {
+    font-size: 18px;
+  }
+  .main-content-law .sub-title-article h2 {
+    display: block;
+    width: 100%;
+    font-size: 26px;
+  }
+  .main-content-law .sub-title-article h4 {
+    font-size: 18px;
+  }
+  .main-content-law .sub-content-description p:last-child {
+    margin-bottom: 20px;
+  }
+  .main-content-law .sub-content-description .sub-work-types {
+    width: 100%;
+  }
+  .main-content-law .sub-content-description .sub-work-types .work-types-block {
+    display: block;
+    width: 80%;
+  }
+  .main-content-law .footer-section-description .law-description-footer {
+    width: 100%;
+    padding: 0;
+  }
+  .main-content-law .footer-section-description p:first-child:after {
+    display: none;
+    content: "";
+  }
+  .main-content-law .footer-section-description p:nth-child(2n):after {
+    display: none;
+    content: "";
+  }
+  .main-content-law .footer-section-description .btn-order {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+/*
+*
+Tablet
+*
+*/
+@media only screen and (max-width: 768px) {
+  .main-content-law .main-title-article h1 {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  .main-content-law .main-title-article .main-title-type {
+    font-size: 18px;
+  }
+  .main-content-law .sub-title-article h2 {
+    display: block;
+    width: 100%;
+    font-size: 26px;
+  }
+  .main-content-law .sub-title-article h4 {
+    font-size: 18px;
+  }
+  .main-content-law .sub-content-description p:last-child {
+    margin-bottom: 20px;
+  }
+  .main-content-law .sub-content-description .sub-work-types {
+    width: 100%;
+    text-align: center;
+  }
+  .main-content-law .sub-content-description .sub-work-types .work-types-block {
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+  .main-content-law .sub-content-description .sub-work-types .work-types-block img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-content-law .footer-section-description .law-description-footer {
+    width: 100%;
+    padding: 0;
+  }
+  .main-content-law .footer-section-description p:first-child:after {
+    display: none;
+    content: "";
+  }
+  .main-content-law .footer-section-description p:nth-child(2n):after {
+    display: none;
+    content: "";
+  }
+  .main-content-law .footer-section-description .btn-order {
+    display: block;
+    width: 60%;
+    font-size: 14px;
+  }
 }

@@ -15,6 +15,7 @@
     <script src="js/js.js"></script>
     <link rel="stylesheet" href="fonts/icomoon/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+<!--     <link rel="stylesheet" href="css/media.css"> -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -250,7 +251,7 @@
         <section id="right-content-ecp" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
 
             <!-- Navigation over header -->
-            <nav class="navigation-container">
+            <nav class="navigation-container hidden-xs">
                 <ul>
                     <li><a href="#" class="links">Главная</a></li>
                     <li><a href="#" class="links">Электронная отчетность</a></li>
@@ -290,7 +291,7 @@
                         <div class="list clearfix">
                             <span class="header-types">1. ОСНО</span> (общая система налогообложения). 
                             Используется при налогообложении предприятий и организаций крупного и среднего бизнеса, при этом уплате подлежат следующие виды налогов:
-                            <div class="types-laws-category">
+                            <div class="types-laws-category hidden-xs">
                                 <ul>
                                    <div class="category-block">
                                         <li>
@@ -444,10 +445,11 @@
                         </p>
                         <a class="btn-order">Оставить завяку на заказ</a>
                     </div>
-                <!-- //Footer Section -->
+                <!-- // Footer Section -->
                 </div>
-            <!-- //Second div description -->
+            <!-- // Second div description -->
             </div>
+            <!-- // Main-content-law -->
     
 
 
@@ -620,7 +622,7 @@
 
 
 
-
+    <script src="js/Modal-mine.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery-css-transform.min.js"></script>
     <script src="js/jquery-animate-css-rotate-scale.min.js"></script>

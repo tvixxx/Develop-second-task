@@ -27,6 +27,18 @@ $button_order_color: #FF0000;
   border-radius: $box_border_radius;
 }
 
+@mixin phone {
+	@media only screen and(max-width: 480px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media only screen and (max-width : 768px) {
+		@content;
+	}
+}
+
+
 .navigation-container {
 	margin-bottom: 85px;
 	ul {
@@ -248,7 +260,7 @@ $button_order_color: #FF0000;
     margin-left: auto;
     margin-right: auto;
     font-family: "Elektra Text Pro", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 24px;
     text-align: center;
     border: none;
@@ -263,4 +275,144 @@ $button_order_color: #FF0000;
 } // End Main-Content-Law
 
 
+	/*
+	*
+	Media Phone
+	*
+	*/
+	@include phone {
+		.main-content-law {
 
+			//Main title
+			.main-title-article {
+				h1 {
+					width: 100%;
+					margin-top: 20px;
+					font-size: 28px;
+				} // End-title-article
+				.main-title-type {
+					font-size: 18px;
+				} // End Main-title-type
+			}
+
+
+			// Sub title
+			.sub-title-article {
+				h2 {
+					display: block;
+					width: 100%;
+					font-size: 26px;
+				}// End h2
+				h4 {
+					font-size: 18px;
+				}// End h4
+			} // End Sub-title-article
+			.sub-content-description {
+
+				p:last-child {
+					margin-bottom: 20px;
+				} // End p-last
+				.sub-work-types {
+					width: 100%;
+					.work-types-block{
+						display: block;
+						width: 80%;
+					} // End Work-types-block
+				} // End Sub-work-types
+			} // End Sub-content-description
+			
+			.footer-section-description {
+				.law-description-footer {
+					width: 100%;
+					padding: 0;
+				} // End law-description-footer
+				p:first-child:after {
+					display: none;
+				  	content: "";
+				 
+				} // End p-first
+				p:nth-child(2n):after {
+					display: none;
+				  	content: "";
+				} // End p-last
+				.btn-order {
+					display: block;
+					width: 100%;
+					font-size: 14px;
+				} // End btn-order
+			} // End Footer-section-description
+
+			
+		}// End Main-Content-Law
+	}
+
+
+	/*
+	*
+	Tablet
+	*
+	*/
+	@include tablet {
+		.main-content-law {
+			//Main title
+			.main-title-article {
+				h1 {
+					width: 100%;
+					margin-top: 20px;
+					font-size: 28px;
+				} // End-title-article
+				.main-title-type {
+					font-size: 18px;
+				} // End Main-title-type
+			} // End main-title-article
+			// Sub title
+			.sub-title-article {
+				h2 {
+					display: block;
+					width: 100%;
+					font-size: 26px;
+				} // End h2
+				h4 {
+					font-size: 18px;
+				} // End h4
+			} // End Sub-title-article
+			.sub-content-description {
+				p:last-child {
+					margin-bottom: 20px;
+				} // End p
+				.sub-work-types {
+					width: 100%;
+					text-align: center;
+					.work-types-block {
+						display: block;
+						text-align: center;
+						width: 80%;
+						img {
+							margin-left: auto;
+							margin-right: auto;
+						} // End Img
+					} // End Work-types-block
+				} // End Sub-work-types
+			} // End sub-content-description
+			.footer-section-description {
+				.law-description-footer {
+					width: 100%;
+					padding: 0;
+				} // End law-description-footer
+				p:first-child:after {
+					display: none;
+				  	content: "";
+				 
+				} // End p-first
+				p:nth-child(2n):after {
+					display: none;
+				  	content: "";
+				} // End p-last
+				.btn-order {
+					display: block;
+					width: 60%;
+					font-size: 14px;
+				} // End btn-order
+			} // End Footer-section-description
+		}
+	}		
