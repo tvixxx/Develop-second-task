@@ -279,8 +279,10 @@ $modal_input_color_bg: #346898;
 // Modal windows
 // Main block
 .modal-block {
-	$modal_popup_width: 550px;
-	$modal_popup_height: 420px;
+	$modal_popup_width: 29%;
+	$modal_popup_height: 56%;
+	// width: 100%; 550px
+	// height: 100%; 420px
 
 	display: block;
 	position: fixed;
@@ -313,7 +315,8 @@ $modal_input_color_bg: #346898;
 	}
 
 	.header-modal {
-		width: 440px;
+		width: 80%;
+		// width: 440px;
 		font-size: 24px;
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -323,11 +326,13 @@ $modal_input_color_bg: #346898;
 	}
 }
 .login-form {
-	width: 510px;
-	height: 290px;
+	width: 92%;
+	height: 69%;
 	border: 5px solid white;
 	margin-left: 20px;
 	@include border-radius(10px);
+	// width: 510px;
+	// height: 290px;
 	
 	label {
 		display: block;
@@ -415,6 +420,7 @@ $modal_input_color_bg: #346898;
 	@include border-radius(10px);
 
 	p {
+		width: 100%;
 		padding-top: 30px;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -474,7 +480,8 @@ $modal_input_color_bg: #346898;
 
 	p {
 		display: block;
-		width: 300px;
+		width: 100%;
+		// width: 300px;
 		padding: 10px 10px 0 10px;
 		margin-top: 10px;
 		margin-bottom: 0;

@@ -9,7 +9,7 @@ $(document).ready(function(){
     var closeSuccessBtn = $(".close-modal-btn");
 
     var form = $(".login-form");
-    var email = $("[name=email-id]")
+    var email = $("[id=email-id]")
     var closeEmailBtn = $(".close-modal-btn-email");
     var errorEmailBlock = $(".modal-block-error-email");
 
@@ -26,14 +26,16 @@ $(document).ready(function(){
 
 	butSend.click(function(event){
 		event.preventDefault();
-			if (!(email.value == " ")) {
+			if ((email).val() === "") {
     		errorEmailBlock.show(400);
     		return;
+    		} else {
+    			event.preventDefault();
+	    		$("#form-reset-login").get(0).reset();
+				modalSuccess.animate({
+	    			'opacity' : 'show'
+	    			},200);
     		};
-		$("#form-reset-login").get(0).reset();
-		modalSuccess.animate({
-    		'opacity' : 'show'
-    	},200);
 	});
 
  	closeSuccessBtn.click(function(event){

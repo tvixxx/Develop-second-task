@@ -227,8 +227,8 @@
 .main-content-law .modal-block {
   display: block;
   position: fixed;
-  width: 550px;
-  height: 420px;
+  width: 29%;
+  height: 56%;
   display: block;
   top: 0;
   bottom: 0;
@@ -258,7 +258,7 @@
   cursor: pointer;
 }
 .main-content-law .modal-block .header-modal {
-  width: 440px;
+  width: 80%;
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -267,8 +267,8 @@
   color: white;
 }
 .main-content-law .login-form {
-  width: 510px;
-  height: 290px;
+  width: 92%;
+  height: 69%;
   border: 5px solid white;
   margin-left: 20px;
   -webkit-border-radius: 10px;
@@ -367,6 +367,7 @@
   border-radius: 10px;
 }
 .main-content-law .modal-block-success p {
+  width: 100%;
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
@@ -430,7 +431,7 @@
 }
 .main-content-law .modal-block-error-email p {
   display: block;
-  width: 300px;
+  width: 100%;
   padding: 10px 10px 0 10px;
   margin-top: 10px;
   margin-bottom: 0;
