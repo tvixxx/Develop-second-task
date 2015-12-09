@@ -25,18 +25,38 @@ $(document).ready(function(){
     })
 
 	butSend.click(function(event){
-		event.preventDefault();
-			if ((email).val() === "") {
-    		errorEmailBlock.show(400);
-    		return;
-    		} else {
-    			event.preventDefault();
-	    		$("#form-reset-login").get(0).reset();
-				modalSuccess.animate({
-	    			'opacity' : 'show'
-	    			},200);
-    		};
-	});
+        event.preventDefault();
+            if ((email).val() === "") {
+            errorEmailBlock.show(400);
+            return;
+            } else {
+                event.preventDefault();
+                $("#form-reset-login").get(0).reset();
+                modalSuccess.animate({
+                    'opacity' : 'show'
+                    },200);
+            };
+    });
+
+
+
+email.blur(function(){
+            if(email.val().search(pattern) == 0){
+                errorEmailBlock.show(400);
+                } else {
+                   event.preventDefault();
+                $("#form-reset-login").get(0).reset();
+                modalSuccess.animate({
+                    'opacity' : 'show'
+                    },200);
+                }
+            });
+
+
+
+
+
+
 
  	closeSuccessBtn.click(function(event){
  		event.preventDefault();

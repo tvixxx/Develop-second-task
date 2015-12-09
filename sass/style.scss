@@ -313,6 +313,8 @@ $modal_input_color_bg: #346898;
 	@include border-radius(10px);
 	-webkit-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
 	-moz-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+	-ms-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+	-o-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
 	box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
 
 	.close-modal-block {
@@ -374,10 +376,12 @@ $modal_input_color_bg: #346898;
 		background-color: $modal_input_color_bg;
 		@include border-radius(10px);
 		opacity: 0.8;
-		-webkit-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
 
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
 
 		&:hover {
 			opacity: 0.8;
@@ -390,7 +394,7 @@ $modal_input_color_bg: #346898;
 	}
 	.btn-send { 
 		display: block;
-		width: 20%;
+		width: 30%;
 		font-size: 12px;
 		min-height: 20px;
 		margin-left: auto;
@@ -401,15 +405,23 @@ $modal_input_color_bg: #346898;
 		outline: none;
 		color: white;
 		background-color: $button_order_color;
-		-webkit-transition: all 0.4s ease-in-out;
-		-o-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
+
+			-webkit-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
 
 		&:hover {
 			border:none;
 			opacity: 0.9;
 			background-color: $button_order_color_hover;
-			transform: scale(1.15, 1.15);
+
+				-webkit-transform: scale(1.15, 1.15);
+				-moz-transform: scale(1.15, 1.15);
+				-ms-transform: scale(1.15, 1.15);
+				-o-transform: scale(1.15, 1.15);
+				transform: scale(1.15, 1.15);
 		}
 
 	}
@@ -455,15 +467,23 @@ $modal_input_color_bg: #346898;
 		color: white;
 		text-decoration: none;
 		background-color: $button_order_color;
-		-webkit-transition: all 0.4s ease-in-out;
-		-o-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
+
+			-webkit-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
 
 		&:hover {
 			opacity: 0.9;
 			background-color: $button_order_color_hover;
 			text-decoration: none;
-			transform: scale(1.15, 1.15);
+
+				-webkit-transform: scale(1.15, 1.15);
+				-moz-transform: scale(1.15, 1.15);
+				-o-transform: scale(1.15, 1.15);
+				-ms-transform: scale(1.15, 1.15);
+	        		transform: scale(1.15, 1.15);
 		}
 		&:visited {
 			text-decoration: none;
@@ -519,15 +539,23 @@ $modal_input_color_bg: #346898;
 		color: white;
 		text-decoration: none;
 		background-color: $button_order_color;
-		-webkit-transition: all 0.4s ease-in-out;
-		-o-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
+
+			-webkit-transition: all 0.4s ease-in-out;
+			-o-transition: all 0.4s ease-in-out;
+			-moz-transition: all 0.4s ease-in-out;
+			-ms-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
 
 		&:hover {
 			opacity: 0.9;
 			background-color: $button_order_color_hover;
 			text-decoration: none;
-			transform: scale(1.15, 1.15);
+
+				-webkit-transform: scale(1.15, 1.15);
+					-moz-transform: scale(1.15, 1.15);
+					-o-transform: scale(1.15, 1.15);
+					-ms-transform: scale(1.15, 1.15);
+		        		transform: scale(1.15, 1.15);
 		}
 		&:visited {
 			text-decoration: none;
@@ -537,34 +565,6 @@ $modal_input_color_bg: #346898;
 		}
 	}
 }
-
-// layers show and disapear
-.hide {
-	display: none;
-}
-.show {
-	display: block;
-	//animation
-	-webkit-animation: bounce .6s;
-	        animation: bounce .6s;
-}
-
-// Animation
-@-webkit-keyframes bounce {
-	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
-	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
-	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
-	100% { -webkit-transform: translateY(0); transform: translateY(0);}
-	
-}
-@keyframes bounce {
-	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
-	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
-	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
-	100% { -webkit-transform: translateY(0); transform: translateY(0);}
-	
-}	
-
 	/*
 	*
 	Media Phone
@@ -701,7 +701,7 @@ $modal_input_color_bg: #346898;
 	.modal-block {
 		// width: 100%; 550px
 		// height: 100%; 420px
-		display: block;
+		display: none;
 		position: fixed;
 		width: 550px;
 		height: 420px;
@@ -714,11 +714,13 @@ $modal_input_color_bg: #346898;
 		padding: 0;
 		z-index: 5;
 		background-color: $modal_color_bg;
-
 		@include border-radius(10px);
-		-webkit-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
-		-moz-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
-		box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+
+			-webkit-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+			-moz-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+			-ms-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+			-o-box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
+			box-shadow: 6px 10px 21px -4px rgba(0,0,0,0.5);
 
 		.close-modal-block {
 			content: "";
@@ -779,13 +781,16 @@ $modal_input_color_bg: #346898;
 			background-color: $modal_input_color_bg;
 			@include border-radius(10px);
 			opacity: 0.8;
-			-webkit-transition: all 0.3s ease-in-out;
-			-o-transition: all 0.3s ease-in-out;
-			transition: all 0.3s ease-in-out;
+
+				-webkit-transition: all 0.3s ease-in-out;
+				-o-transition: all 0.3s ease-in-out;
+				-moz-transition: all 0.3s ease-in-out;
+				-ms-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
 		}
 		.btn-send { 
 			display: block;
-			width: 20%;
+			width: 30%;
 			font-size: 12px;
 			min-height: 20px;
 			margin-left: auto;
@@ -796,9 +801,12 @@ $modal_input_color_bg: #346898;
 			outline: none;
 			color: white;
 			background-color: $button_order_color;
-			-webkit-transition: all 0.4s ease-in-out;
-			-o-transition: all 0.4s ease-in-out;
-			transition: all 0.4s ease-in-out;
+
+				-webkit-transition: all 0.4s ease-in-out;
+				-o-transition: all 0.4s ease-in-out;
+				-moz-transition: all 0.4s ease-in-out;
+				-ms-transition: all 0.4s ease-in-out;
+				transition: all 0.4s ease-in-out;
 
 		}
 	}
@@ -843,9 +851,12 @@ $modal_input_color_bg: #346898;
 			color: white;
 			text-decoration: none;
 			background-color: $button_order_color;
-			-webkit-transition: all 0.4s ease-in-out;
-			-o-transition: all 0.4s ease-in-out;
-			transition: all 0.4s ease-in-out;
+
+				-webkit-transition: all 0.4s ease-in-out;
+				-o-transition: all 0.4s ease-in-out;
+				-moz-transition: all 0.4s ease-in-out;
+				-ms-transition: all 0.4s ease-in-out;
+				transition: all 0.4s ease-in-out;
 		}
 	}
 
@@ -894,9 +905,79 @@ $modal_input_color_bg: #346898;
 			color: white;
 			text-decoration: none;
 			background-color: $button_order_color;
-			-webkit-transition: all 0.4s ease-in-out;
-			-o-transition: all 0.4s ease-in-out;
-			transition: all 0.4s ease-in-out;
+
+				-webkit-transition: all 0.4s ease-in-out;
+				-o-transition: all 0.4s ease-in-out;
+				-moz-transition: all 0.4s ease-in-out;
+				-ms-transition: all 0.4s ease-in-out;
+				transition: all 0.4s ease-in-out;
 		}
 	}
 }
+
+
+// layers show and disapear
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+	//animation
+	-webkit-animation: bounce .6s;
+	-o-animation:  bounce .6s;
+	-ms-animation:  bounce .6s;
+	-moz-animation:  bounce .6s;
+	        animation: bounce .6s;
+}
+
+// Animation
+@-webkit-keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
+	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -webkit-transform: translateY(0); transform: translateY(0);}
+}
+@-webkit-keyframes bounce {
+	0% { -o-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -o-transform: translateY(30px); transform: translateY(30px);}
+	90% { -o-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -o-transform: translateY(0); transform: translateY(0);}
+}
+@-webkit-keyframes bounce {
+	0% { -moz-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -moz-transform: translateY(30px); transform: translateY(30px);}
+	90% { -moz-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -moz-transform: translateY(0); transform: translateY(0);}
+}
+@-webkit-keyframes bounce {
+	0% { -ms-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -ms-transform: translateY(30px); transform: translateY(30px);}
+	90% { -ms-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -ms-transform: translateY(0); transform: translateY(0);}
+}
+
+
+@keyframes bounce {
+	0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -webkit-transform: translateY(30px); transform: translateY(30px);}
+	90% { -webkit-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -webkit-transform: translateY(0); transform: translateY(0);}
+}	
+@keyframes bounce {
+	0% { -o-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -o-transform: translateY(30px); transform: translateY(30px);}
+	90% { -o-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -o-transform: translateY(0); transform: translateY(0);}
+}	
+@keyframes bounce {
+	0% { -moz-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -moz-transform: translateY(30px); transform: translateY(30px);}
+	90% { -moz-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -moz-transform: translateY(0); transform: translateY(0);}
+}	
+@keyframes bounce {
+	0% { -ms-transform: translateY(-2000px); transform: translateY(-2000px);}
+	70% { -ms-transform: translateY(30px); transform: translateY(30px);}
+	90% { -ms-transform: translateY(-10px); transform: translateY(-10px);}
+	100% { -ms-transform: translateY(0); transform: translateY(0);}
+}	
