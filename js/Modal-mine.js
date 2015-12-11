@@ -13,7 +13,6 @@ $(document).ready(function(){
     var closeEmailBtn = $(".close-modal-btn-email");
     var errorEmailBlock = $(".modal-block-error-email");
 
-
     butLink.click(function(event){
     	event.preventDefault();
     	modalPopup.show(400);
@@ -38,8 +37,6 @@ $(document).ready(function(){
             };
     });
 
-
-
 email.blur(function(){
             if(email.val().search(pattern) == 0){
                 errorEmailBlock.show(400);
@@ -52,12 +49,6 @@ email.blur(function(){
                 }
             });
 
-
-
-
-
-
-
  	closeSuccessBtn.click(function(event){
  		event.preventDefault();
  			modalSuccess.hide(400);
@@ -68,7 +59,6 @@ email.blur(function(){
 		event.preventDefault();
 		errorEmailBlock.hide(400);
 	});
-
 
 });
 
